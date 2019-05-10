@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>Parcial</title>
+		<link rel="stylesheet" type="text/css" href="./estilos.css">
+		<script type="text/javascript" src="./nodos.js"></script>
+		
+
+	</head>
+	<body>
+		<form class = "contenedor" hidden id="contAgregar">
+			<input type="button" value="x" class="cerrar" id="btnCerrar" onclick="Cerrar('contAgregar')"><br>
+			Nombre<br>
+			<input type="text" placeholder="Ingrese nombre...." class="sinError" size="40" id="nombre"><br>
+			Cuatrimestre<br><select name="select" id="cuatrimestre">
+  			<option value="1">1</option> 
+  			<option value="2">2</option>
+  			<option value="3">3</option>
+  			<option value="3">4</option>
+			</select><br>
+			Turno<br>
+			<input type="radio" name="turno" value="Mañana" size="40" id="turno">Maniana
+			<input type="radio" name="turno" value="Noche" size="40" id="turno">Noche<br>
+			Fecha<br>
+			<input type="date" placeholder="Tu fecha de nacimiento..." class="sinError" size="40" id="fecha"><br><br>
+			<input type="button" value = "Modificar" onclick="Modificar()" class="botonModificar">
+			<input type="button" value = "Borrar" onclick="Borrar()" class="botonBorrar"><br>
+
+		</form>
+		<!--<form class = "contenedor" hidden id="contModificar">
+			<input type="button" value="x" class="cerrar" id="btnCerrarMod" onclick="Cerrar('contModificar')"><br>
+			Nombre<br>
+			<input type="text" placeholder="Tu nombre..." class="sinError" size="40" id="nombreMod"><br>
+			Apellido<br>
+			<input type="text" placeholder="Tu apellido..." class="sinError" size="40" id="apellidoMod"><br>
+			Telefono<br>
+			<input type="text" placeholder="Tu telefono..." class="sinError" size="40" id="telefonoMod"><br>
+			Frecha<br>
+			<input type="text" placeholder="Tu fecha de nacimiento..." class="sinError" size="40" id="fechaMod"><br><br>
+			<input type="button" value = "Modificar" class="boton" id="btnModificar"><br>
+		</form>
+			<input type="button" id="btnAgregar" onclick="Abrir('contAgregar');" value="Agregar">-->
+			
+			<h2>Lista Materias</h2>
+		<table style="width: 100%"  border = "0" class = "tabla">
+           	<thread>
+            	<th>ID</th>
+            	<th>Nombre</th>
+            	<th>Cuatrimestre</th>
+            	<th>FechaFinal</th>
+           		<th>Turno</th>
+           	</thread>
+           	<tbody id = "tbody" >
+           		
+           	</tbody>
+         </table>
+	</body>
+</html>
