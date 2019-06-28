@@ -1,0 +1,30 @@
+.borde
+{
+    border: 1px solid black;
+    height: 50px;
+}
+.color1
+{
+    background-color: #bbb;
+}
+.color2
+{
+    background-color: #FEF1F7;
+}
+.divRow
+{
+    background-color: #bbb;
+    height: 100px;
+}
+th
+{
+	background-color: #FEF1F7;
+}
+tr:nth-child(odd)
+{
+	background-color: white;
+}
+.bor
+{
+    background: https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwj9nbqBh43jAhW9FLkGHZscBBMQjRx6BAgBEAU&url=https%3A%2F%2Fwww.freepik.es%2Ficonos-gratis%2Fcubo-basura_768360.htm&psig=AOvVaw2sYoS89g-rjnVXV-QLzOC7&ust=1561841469147488;
+}

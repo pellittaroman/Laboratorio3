@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="estilos.css">
+		<!--<link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">-->
+   		<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<!--<script type="text/javascript" src="./persona.js"></script>
+		<script type="text/javascript" src="./Empleado.js"></script>-->
+		<script type="text/javascript" src="./manejadora.js"></script>
+		<title>Modelo de parcial</title>
+	</head>
+	<body>
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+		            <span class="navbar-toggler-icon"></span>
+		        </button>
+		        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+		            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+		            	<li class="nav-item">
+		                   <h5> <a class="nav-link" href="#">Lista</a> </h5	>
+		                </li>
+		                <li class="nav-item active">
+		                    <a class="nav-link" id="btnMostrar" href="#">Mostrar</a>
+		                </li>
+		                <li class="nav-item">
+		                    <a class="nav-link disabled" href="#" disabled>Formulario</a>
+		                </li>
+		                <li class="nav-item dropdown">
+		                    <a class="nav-link dropdown-toggle" href="#" id="Ver" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		                        Ver
+		                    </a>
+		                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		                        <a class="dropdown-item" id="btnPromedio" href="#">Promedio</a>
+		                        <a class="dropdown-item" id="btnFiltrar" href="#">Filtrar</a>
+		                        <a class="dropdown-item" id="btnNomYAp" href="#">Solo Nombre y Apellido</a>
+		                    </div>
+		                </li>
+		            </ul>
+		        </div>
+		    </nav>
+
+		    <br>
+
+            <div class="container">
+	            <div class="row">
+	            	<div class="col-lg-4 color1" id="Alta">
+		            	<h2 id="header">Alta Empleado</h2>
+		            	Nombre:
+		          			<input type="text" class="form-control" id="nombre">
+		            	Apellido:
+		          			<input type="text" class="form-control" id="apellido">
+		            	Edad:
+		          			<input type="text" class="form-control" id="edad">
+		            	Legajo:
+		          			<input type="text" class="form-control" id="legajo">
+		            	Horario:
+		            	<select name="controlSelect" id="horario" class="form-control col-lg-4">
+				          <option value="tarde">Tarde</option>
+				          <option value="maniana">Mañana</option>
+				          <option value="noche">Noche</option>
+				        </select><br>
+				        <div class="row justify-content-around">
+						    <button class="btn btn-danger col align-self-start col-lg-4" id="btnCancelar">X Cancelar</button>
+						    <button class="btn btn-success col align-self-end col-lg-4" id="btnAgregar">
+						    	<span class="glyphicon .glyphicon-floppy-disk"></span> Agregar
+						    </button>
+						</div>
+						<br>
+					</div>
+					
+					<div class="col-lg-8 color2">
+						<h1>Lista de empleados</h1>
+					   <table class="table" id="table">
+					     <thead class="bg-white">
+					       <tr>
+					         <th>Nombre</th>
+					         <th>Apellido</th>
+					         <th>Edad</th>
+					         <th>Legajo</th>
+					         <th>Turno</th>
+					         <th>Accion</th>
+					       </tr>
+					     </thead>
+					     <tbody id="tbody">
+					       <tr>
+					         <td>John</td>
+					         <td>Doe</td>
+					         <td>28</td>
+					         <td>3123151</td>
+					         <td>Tarde</td>
+					         <td>Borrar</td>
+					       </tr>
+					       <tr>
+					         <td>Mary</td>
+					         <td>Moe</td>
+					         <td>35</td>
+					         <td>453151</td>
+					         <td>Mañana</td>
+					         <td>Borrar</td>
+					       </tr>
+					       <tr>
+					         <td>July</td>
+					         <td>Dooley</td>
+					         <td>47</td>
+					         <td>2385789</td>
+					         <td>Noche</td>
+					         <td>Borrar</td>
+					       </tr>      
+					     </tbody>
+					   </table>
+					</div>
+	            </div>
+	        </div>
+
+	</body>
+</html>
